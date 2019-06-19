@@ -1,0 +1,10 @@
+D:\001-공유폴더\c_work\ch01\ch01\bin\Debug\ch01.exe.config
+D:\001-공유폴더\c_work\ch01\ch01\bin\Debug\ch01.exe
+D:\001-공유폴더\c_work\ch01\ch01\bin\Debug\ch01.pdb
+D:\001-공유폴더\c_work\ch01\ch01\obj\Debug\ch01.csprojAssemblyReference.cache
+D:\001-공유폴더\c_work\ch01\ch01\obj\Debug\ch01.Form1.resources
+D:\001-공유폴더\c_work\ch01\ch01\obj\Debug\ch01.Properties.Resources.resources
+D:\001-공유폴더\c_work\ch01\ch01\obj\Debug\ch01.csproj.GenerateResource.cache
+D:\001-공유폴더\c_work\ch01\ch01\obj\Debug\ch01.csproj.CoreCompileInputs.cache
+D:\001-공유폴더\c_work\ch01\ch01\obj\Debug\ch01.exe
+D:\001-공유폴더\c_work\ch01\ch01\obj\Debug\ch01.pdb

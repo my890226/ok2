@@ -1,4 +1,4 @@
-﻿namespace _20190507datagird
+﻿namespace _20190503
 {
     partial class Form1
     {
@@ -28,198 +28,262 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.myTable = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.name_txt = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.pw_text = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.male_radio = new System.Windows.Forms.RadioButton();
-            this.female_radio = new System.Windows.Forms.RadioButton();
-            this.label4 = new System.Windows.Forms.Label();
-            this.remark_text = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.age_text = new System.Windows.Forms.NumericUpDown();
-            ((System.ComponentModel.ISupportInitialize)(this.myTable)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.age_text)).BeginInit();
+            this.tb = new System.Windows.Forms.TextBox();
+            this.btn7 = new System.Windows.Forms.Button();
+            this.btn8 = new System.Windows.Forms.Button();
+            this.btn9 = new System.Windows.Forms.Button();
+            this.btn4 = new System.Windows.Forms.Button();
+            this.btn5 = new System.Windows.Forms.Button();
+            this.btn6 = new System.Windows.Forms.Button();
+            this.btn1 = new System.Windows.Forms.Button();
+            this.btn2 = new System.Windows.Forms.Button();
+            this.btn3 = new System.Windows.Forms.Button();
+            this.btn0 = new System.Windows.Forms.Button();
+            this.btneq = new System.Windows.Forms.Button();
+            this.btnMul = new System.Windows.Forms.Button();
+            this.btnDiv = new System.Windows.Forms.Button();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.btnMinus = new System.Windows.Forms.Button();
+            this.btnCE = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // myTable
+            // tb
             // 
-            this.myTable.BackgroundColor = System.Drawing.Color.White;
-            this.myTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.myTable.Location = new System.Drawing.Point(115, 12);
-            this.myTable.Name = "myTable";
-            this.myTable.RowTemplate.Height = 23;
-            this.myTable.Size = new System.Drawing.Size(278, 224);
-            this.myTable.TabIndex = 0;
-            this.myTable.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.myTable_CellDbClick);
+            this.tb.Location = new System.Drawing.Point(19, 21);
+            this.tb.Multiline = true;
+            this.tb.Name = "tb";
+            this.tb.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
+            this.tb.Size = new System.Drawing.Size(205, 53);
+            this.tb.TabIndex = 0;
+            this.tb.Text = "0";
+            this.tb.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // button1
+            // btn7
             // 
-            this.button1.Location = new System.Drawing.Point(115, 242);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(65, 28);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "등록";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btn7.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btn7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn7.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn7.Location = new System.Drawing.Point(19, 83);
+            this.btn7.Name = "btn7";
+            this.btn7.Size = new System.Drawing.Size(49, 30);
+            this.btn7.TabIndex = 1;
+            this.btn7.Text = "7";
+            this.btn7.UseVisualStyleBackColor = false;
+            this.btn7.Click += new System.EventHandler(this.number_click);
             // 
-            // button2
+            // btn8
             // 
-            this.button2.Location = new System.Drawing.Point(186, 242);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(65, 28);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "수정";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btn8.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btn8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn8.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn8.Location = new System.Drawing.Point(74, 83);
+            this.btn8.Name = "btn8";
+            this.btn8.Size = new System.Drawing.Size(49, 30);
+            this.btn8.TabIndex = 2;
+            this.btn8.Text = "8";
+            this.btn8.UseVisualStyleBackColor = false;
+            this.btn8.Click += new System.EventHandler(this.number_click);
             // 
-            // button3
+            // btn9
             // 
-            this.button3.Location = new System.Drawing.Point(257, 242);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(65, 28);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "삭제";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.deleteStudent_Click);
+            this.btn9.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btn9.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn9.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn9.Location = new System.Drawing.Point(129, 83);
+            this.btn9.Name = "btn9";
+            this.btn9.Size = new System.Drawing.Size(49, 30);
+            this.btn9.TabIndex = 3;
+            this.btn9.Text = "9";
+            this.btn9.UseVisualStyleBackColor = false;
+            this.btn9.Click += new System.EventHandler(this.number_click);
             // 
-            // button4
+            // btn4
             // 
-            this.button4.Location = new System.Drawing.Point(328, 242);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(65, 28);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "조회";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.btn4.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btn4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn4.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn4.Location = new System.Drawing.Point(19, 119);
+            this.btn4.Name = "btn4";
+            this.btn4.Size = new System.Drawing.Size(49, 30);
+            this.btn4.TabIndex = 4;
+            this.btn4.Text = "4";
+            this.btn4.UseVisualStyleBackColor = false;
+            this.btn4.Click += new System.EventHandler(this.number_click);
             // 
-            // name_txt
+            // btn5
             // 
-            this.name_txt.Location = new System.Drawing.Point(16, 27);
-            this.name_txt.Name = "name_txt";
-            this.name_txt.Size = new System.Drawing.Size(93, 21);
-            this.name_txt.TabIndex = 6;
+            this.btn5.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btn5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn5.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn5.Location = new System.Drawing.Point(74, 119);
+            this.btn5.Name = "btn5";
+            this.btn5.Size = new System.Drawing.Size(49, 30);
+            this.btn5.TabIndex = 5;
+            this.btn5.Text = "5";
+            this.btn5.UseVisualStyleBackColor = false;
+            this.btn5.Click += new System.EventHandler(this.number_click);
             // 
-            // label1
+            // btn6
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(29, 12);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "이름";
+            this.btn6.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btn6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn6.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn6.Location = new System.Drawing.Point(129, 119);
+            this.btn6.Name = "btn6";
+            this.btn6.Size = new System.Drawing.Size(49, 30);
+            this.btn6.TabIndex = 6;
+            this.btn6.Text = "6";
+            this.btn6.UseVisualStyleBackColor = false;
+            this.btn6.Click += new System.EventHandler(this.number_click);
             // 
-            // label2
+            // btn1
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(13, 54);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(53, 12);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "비밀번호";
+            this.btn1.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btn1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn1.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn1.Location = new System.Drawing.Point(19, 155);
+            this.btn1.Name = "btn1";
+            this.btn1.Size = new System.Drawing.Size(49, 30);
+            this.btn1.TabIndex = 7;
+            this.btn1.Text = "1";
+            this.btn1.UseVisualStyleBackColor = false;
+            this.btn1.Click += new System.EventHandler(this.number_click);
             // 
-            // pw_text
+            // btn2
             // 
-            this.pw_text.Location = new System.Drawing.Point(16, 72);
-            this.pw_text.Name = "pw_text";
-            this.pw_text.Size = new System.Drawing.Size(93, 21);
-            this.pw_text.TabIndex = 8;
+            this.btn2.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btn2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn2.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn2.Location = new System.Drawing.Point(74, 155);
+            this.btn2.Name = "btn2";
+            this.btn2.Size = new System.Drawing.Size(49, 30);
+            this.btn2.TabIndex = 8;
+            this.btn2.Text = "2";
+            this.btn2.UseVisualStyleBackColor = false;
+            this.btn2.Click += new System.EventHandler(this.number_click);
             // 
-            // label3
+            // btn3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(13, 97);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(29, 12);
-            this.label3.TabIndex = 11;
-            this.label3.Text = "성별";
+            this.btn3.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btn3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn3.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn3.Location = new System.Drawing.Point(129, 155);
+            this.btn3.Name = "btn3";
+            this.btn3.Size = new System.Drawing.Size(49, 30);
+            this.btn3.TabIndex = 9;
+            this.btn3.Text = "3";
+            this.btn3.UseVisualStyleBackColor = false;
+            this.btn3.Click += new System.EventHandler(this.number_click);
             // 
-            // male_radio
+            // btn0
             // 
-            this.male_radio.AutoSize = true;
-            this.male_radio.Location = new System.Drawing.Point(9, 121);
-            this.male_radio.Name = "male_radio";
-            this.male_radio.Size = new System.Drawing.Size(47, 16);
-            this.male_radio.TabIndex = 12;
-            this.male_radio.TabStop = true;
-            this.male_radio.Text = "남자";
-            this.male_radio.UseVisualStyleBackColor = true;
+            this.btn0.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btn0.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn0.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn0.Location = new System.Drawing.Point(19, 191);
+            this.btn0.Name = "btn0";
+            this.btn0.Size = new System.Drawing.Size(49, 30);
+            this.btn0.TabIndex = 10;
+            this.btn0.Text = "0";
+            this.btn0.UseVisualStyleBackColor = false;
+            this.btn0.Click += new System.EventHandler(this.number_click);
             // 
-            // female_radio
+            // btneq
             // 
-            this.female_radio.AutoSize = true;
-            this.female_radio.Location = new System.Drawing.Point(62, 121);
-            this.female_radio.Name = "female_radio";
-            this.female_radio.Size = new System.Drawing.Size(47, 16);
-            this.female_radio.TabIndex = 13;
-            this.female_radio.TabStop = true;
-            this.female_radio.Text = "여자";
-            this.female_radio.UseVisualStyleBackColor = true;
+            this.btneq.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btneq.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btneq.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btneq.Location = new System.Drawing.Point(74, 191);
+            this.btneq.Name = "btneq";
+            this.btneq.Size = new System.Drawing.Size(104, 30);
+            this.btneq.TabIndex = 11;
+            this.btneq.Text = "=";
+            this.btneq.UseVisualStyleBackColor = false;
+            this.btneq.Click += new System.EventHandler(this.btneq_Click);
             // 
-            // label4
+            // btnMul
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(14, 185);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(29, 12);
-            this.label4.TabIndex = 15;
-            this.label4.Text = "기타";
+            this.btnMul.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnMul.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMul.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMul.Location = new System.Drawing.Point(184, 83);
+            this.btnMul.Name = "btnMul";
+            this.btnMul.Size = new System.Drawing.Size(40, 30);
+            this.btnMul.TabIndex = 12;
+            this.btnMul.Text = "*";
+            this.btnMul.UseVisualStyleBackColor = false;
+            this.btnMul.Click += new System.EventHandler(this.btnMul_Click);
             // 
-            // remark_text
+            // btnDiv
             // 
-            this.remark_text.Location = new System.Drawing.Point(15, 207);
-            this.remark_text.Multiline = true;
-            this.remark_text.Name = "remark_text";
-            this.remark_text.Size = new System.Drawing.Size(94, 63);
-            this.remark_text.TabIndex = 14;
+            this.btnDiv.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnDiv.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDiv.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDiv.Location = new System.Drawing.Point(184, 119);
+            this.btnDiv.Name = "btnDiv";
+            this.btnDiv.Size = new System.Drawing.Size(40, 30);
+            this.btnDiv.TabIndex = 13;
+            this.btnDiv.Text = "/";
+            this.btnDiv.UseVisualStyleBackColor = false;
             // 
-            // label5
+            // btnAdd
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(14, 140);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(29, 12);
-            this.label5.TabIndex = 16;
-            this.label5.Text = "나이";
+            this.btnAdd.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnAdd.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAdd.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.Location = new System.Drawing.Point(184, 155);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(40, 30);
+            this.btnAdd.TabIndex = 14;
+            this.btnAdd.Text = "+";
+            this.btnAdd.UseVisualStyleBackColor = false;
             // 
-            // age_text
+            // btnMinus
             // 
-            this.age_text.Location = new System.Drawing.Point(17, 155);
-            this.age_text.Name = "age_text";
-            this.age_text.Size = new System.Drawing.Size(49, 21);
-            this.age_text.TabIndex = 17;
+            this.btnMinus.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnMinus.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMinus.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMinus.Location = new System.Drawing.Point(184, 191);
+            this.btnMinus.Name = "btnMinus";
+            this.btnMinus.Size = new System.Drawing.Size(40, 30);
+            this.btnMinus.TabIndex = 15;
+            this.btnMinus.Text = "-";
+            this.btnMinus.UseVisualStyleBackColor = false;
+            // 
+            // btnCE
+            // 
+            this.btnCE.Location = new System.Drawing.Point(230, 83);
+            this.btnCE.Name = "btnCE";
+            this.btnCE.Size = new System.Drawing.Size(39, 30);
+            this.btnCE.TabIndex = 16;
+            this.btnCE.Text = "CE";
+            this.btnCE.UseVisualStyleBackColor = true;
+            this.btnCE.Click += new System.EventHandler(this.btnCE_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(401, 288);
-            this.Controls.Add(this.age_text);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.remark_text);
-            this.Controls.Add(this.female_radio);
-            this.Controls.Add(this.male_radio);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.pw_text);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.name_txt);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.myTable);
+            this.ClientSize = new System.Drawing.Size(303, 241);
+            this.Controls.Add(this.btnCE);
+            this.Controls.Add(this.btnMinus);
+            this.Controls.Add(this.btnAdd);
+            this.Controls.Add(this.btnDiv);
+            this.Controls.Add(this.btnMul);
+            this.Controls.Add(this.btneq);
+            this.Controls.Add(this.btn0);
+            this.Controls.Add(this.btn3);
+            this.Controls.Add(this.btn2);
+            this.Controls.Add(this.btn1);
+            this.Controls.Add(this.btn6);
+            this.Controls.Add(this.btn5);
+            this.Controls.Add(this.btn4);
+            this.Controls.Add(this.btn9);
+            this.Controls.Add(this.btn8);
+            this.Controls.Add(this.btn7);
+            this.Controls.Add(this.tb);
             this.Name = "Form1";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.myTable)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.age_text)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -227,22 +291,23 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView myTable;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.TextBox name_txt;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox pw_text;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.RadioButton male_radio;
-        private System.Windows.Forms.RadioButton female_radio;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox remark_text;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.NumericUpDown age_text;
+        private System.Windows.Forms.TextBox tb;
+        private System.Windows.Forms.Button btn7;
+        private System.Windows.Forms.Button btn8;
+        private System.Windows.Forms.Button btn9;
+        private System.Windows.Forms.Button btn4;
+        private System.Windows.Forms.Button btn5;
+        private System.Windows.Forms.Button btn6;
+        private System.Windows.Forms.Button btn1;
+        private System.Windows.Forms.Button btn2;
+        private System.Windows.Forms.Button btn3;
+        private System.Windows.Forms.Button btn0;
+        private System.Windows.Forms.Button btneq;
+        private System.Windows.Forms.Button btnMul;
+        private System.Windows.Forms.Button btnDiv;
+        private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Button btnMinus;
+        private System.Windows.Forms.Button btnCE;
     }
 }
 

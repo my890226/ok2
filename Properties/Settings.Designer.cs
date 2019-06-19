@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ch01.Properties
+namespace _20190507datagird.Properties
 {
 
 
